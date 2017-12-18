@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Diogo Marques</title>
+    <link>/~dmarques/publication/</link>
+    <description>Recent content in Publications on Diogo Marques</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/~dmarques/publication/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Characterizing Social Insider Attacks on Facebook</title>
+      <link>/~dmarques/publication/facebook/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/~dmarques/publication/facebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Snooping on Mobile Phones: Prevalence and Trends</title>
+      <link>/~dmarques/publication/snooping/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/~dmarques/publication/snooping/</guid>
+      <description>
+
+&lt;h3 id=&#34;distinctions&#34;&gt;Distinctions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SOUPS 2016 Distinguished Paper Award&lt;/li&gt;
+&lt;li&gt;ACM Computing Reviews&amp;rsquo;s &lt;a href=&#34;http://www.computingreviews.com/recommend/bestof/notableitems.cfm?bestYear=2016&#34; target=&#34;_blank&#34;&gt;Best of Computing 2016&lt;/a&gt;: Notable Item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../img/CRBadgeNotableItem.jpg&#34; alt=&#34;badge&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Usage of Subjective Scales in Accessibility Research</title>
+      <link>/~dmarques/publication/scales/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/~dmarques/publication/scales/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

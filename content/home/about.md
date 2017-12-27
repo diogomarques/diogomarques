@@ -11,14 +11,19 @@ weight = 5
 [interests]
   interests = [
     "Human-Computer Interaction",
-    "Usable Privacy and Security"
+    "Usable Privacy and Security",
+    "Open Science"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "MS in Informatics Engineering"
+  course = "PhD in Informatics, ~2018"
   institution = "Universidade de Lisboa"
-  year = 2014
+
+[[education.courses]]
+  course = "MSc in Informatics Engineering"
+  institution = "Universidade de Lisboa"
+  year = 2013
 
 [[education.courses]]
   course = "BS in Informatics Engineering"
@@ -29,7 +34,7 @@ weight = 5
 
 # About me
 
-I'm a PhD student and usable security researcher. I try to understand people in order to build security tools that leverage their psychological needs.
+I'm a PhD student and HCI researcher, specializing in usable security and privacy. Currently, my research is focused on understanding unauthorized access to mobile devices. 
 
 I also regularly work on HCI methodology, and other HCI application areas, like accessibility. 
 

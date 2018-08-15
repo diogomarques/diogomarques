@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Baks on Diogo Marques</title>
-    <link>/~dmarques/bak/</link>
+    <link>/bak/</link>
     <description>Recent content in Baks on Diogo Marques</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0100</lastBuildDate>
-    <atom:link href="/~dmarques/bak/" rel="self" type="application/rss+xml" />
+    <atom:link href="/bak/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Academic</title>
-      <link>/~dmarques/bak/home/hero/</link>
+      <link>/bak/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0100</pubDate>
       
-      <guid>/~dmarques/bak/home/hero/</guid>
+      <guid>/bak/home/hero/</guid>
       <description>&lt;p&gt;The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀
 &lt;br&gt;
 &lt;small&gt;&lt;a id=&#34;academic-release&#34; href=&#34;https://sourcethemes.com/academic/tags/updates&#34;&gt;Latest release&lt;/a&gt;&lt;/small&gt;
@@ -45,46 +45,46 @@
     
     <item>
       <title>Selected Publications</title>
-      <link>/~dmarques/bak/home/publications_selected/</link>
+      <link>/bak/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
-      <guid>/~dmarques/bak/home/publications_selected/</guid>
+      <guid>/bak/home/publications_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/~dmarques/bak/home/talks/</link>
+      <link>/bak/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/~dmarques/bak/home/talks/</guid>
+      <guid>/bak/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>/~dmarques/bak/home/posts/</link>
+      <link>/bak/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/~dmarques/bak/home/posts/</guid>
+      <guid>/bak/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>/~dmarques/bak/home/projects/</link>
+      <link>/bak/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/~dmarques/bak/home/projects/</guid>
+      <guid>/bak/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>/~dmarques/bak/home/teaching/</link>
+      <link>/bak/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/~dmarques/bak/home/teaching/</guid>
+      <guid>/bak/home/teaching/</guid>
       <description>&lt;p&gt;This is an example of using the &lt;em&gt;custom&lt;/em&gt; widget to create your own homepage section.&lt;/p&gt;
 
 &lt;p&gt;I am a teaching instructor for the following courses at University X:&lt;/p&gt;
@@ -103,19 +103,19 @@
     
     <item>
       <title>Tags</title>
-      <link>/~dmarques/bak/home/tags/</link>
+      <link>/bak/home/tags/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0100</pubDate>
       
-      <guid>/~dmarques/bak/home/tags/</guid>
+      <guid>/bak/home/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/~dmarques/bak/home/contact/</link>
+      <link>/bak/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/~dmarques/bak/home/contact/</guid>
+      <guid>/bak/home/contact/</guid>
       <description></description>
     </item>
     

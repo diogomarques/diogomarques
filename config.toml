@@ -1,4 +1,4 @@
-baseurl = "http://homepages.lasige.di.fc.ul.pt/~dmarques/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = "/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 title = "Diogo Marques"
 copyright = ""
 theme = "hugo-academic"

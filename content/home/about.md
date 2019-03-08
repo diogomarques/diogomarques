@@ -12,7 +12,7 @@ weight = 5
   interests = [
     "Human-Computer Interaction",
     "Usable Privacy and Security",
-    "Open Science"
+    "UX Research"
   ]
 
 # List your qualifications (such as academic degrees).

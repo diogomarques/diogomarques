@@ -17,16 +17,16 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Informatics, ~2018"
+  course = "PhD, Computer Science, expected completion 2019 (ABD)"
   institution = "Universidade de Lisboa"
 
 [[education.courses]]
-  course = "MSc in Informatics Engineering"
+  course = "MEng, Computer Science, specialization Software Engineering"
   institution = "Universidade de Lisboa"
   year = 2013
 
 [[education.courses]]
-  course = "BS in Informatics Engineering"
+  course = "BEng, Computer Science"
   institution = "Universidade de Lisboa"
   year = 2012
 

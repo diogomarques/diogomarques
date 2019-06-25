@@ -39,12 +39,12 @@ selected = true
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
 url_custom = [{name = "USENIX (Open Access)", url = "https://www.usenix.org/conference/soups2016/technical-sessions/presentation/marques"}]
+url_slides = "slides-ds_seminar.pdf"
 #url_pdf = "paper-facebook.pdf"
 #url_preprint = "http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf"
 #url_code = "#"
 #url_dataset = "#"
 #url_project = "#"
-#url_slides = "#"
 #url_video = "#"
 #url_poster = "#"
 #url_source = "#"

@@ -28,7 +28,7 @@ weight = 5
 [[education.courses]]
   course = "BEng, Computer Science"
   institution = "Universidade de Lisboa"
-  year = 2012
+  year = 2011
 
 +++
 

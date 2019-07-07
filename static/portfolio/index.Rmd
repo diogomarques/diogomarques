@@ -1,0 +1,133 @@
+---
+title: "User research blog"
+author: "Diogo Marques"
+date: "Last updated: `r format(Sys.time(), '%b %d %Y')`"
+output: 
+  html_document: 
+    number_sections: no
+    theme: flatly
+    toc: yes
+    toc_depth: 1
+  pdf_document: 
+    number_sections: no
+    toc: yes
+    toc_depth: 1
+---
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46008364-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+This blog showcases some of the projects I’ve worked on. For more detail, please refer to linked research reports, or ask me!
+
+# How blind users respond to rating scales
+
+|Estimated reading time |  3:45  |
+|--                     |     --|
+|Methods	  | Controlled experiments, document review|
+|Deliverables	| Research paper and presentation
+
+## Context
+
+In summer 2014, I was an intern at IBM, at the iconic [TJ Watson Research Center](https://en.wikipedia.org/wiki/Thomas_J._Watson_Research_Center), under [Dr Shari Trewin](https://researcher.watson.ibm.com/researcher/view.php?person=us-trewin). Shari is a leading Accessibility scientist, and just the best mentor one could ever have. At lunch, we would trade war stories of doing user research with sensitive populations. The project we were working on was not related to Accessibility, but I had done some user research with blind participants in the past. 
+
+Once, we were talking about standardized scales, like the [SUS]( https://en.wikipedia.org/wiki/System_usability_scale). We both had noticed that SUS scores from participants with disabilities were often not comparable to benchmarks. Surprisingly, users with disabilities tended to rate interfaces higher, or at least higher than we expected from seeing them struggle with completing tasks. We wondered: was our observation generalizable? Were other researchers aware of this effect? 
+
+After my internship ended, and I went back to Lisbon, we decided to pursue this issue. We enlisted one of my PhD advisers, [Tiago Guerreiro](https://tjvguerreiro.github.io/), himself an Accessibility researcher.
+
+## Research plan
+
+Our research plan included two research activities, which would maximize our combined expertise, and could be completed in a reasonable timeframe. After all, this would be a side project for me, since it was not related to the theme of my PhD, and both Tiago and Shari, as senior researchers, had little time for hands-on tasks. Our plan was, then, to: 1) review a corpus of Accessibility research reports which documented instances of participants with disabilities responding to rating scales; and 2) conduct a controlled experiment, in which visually-impaired participants and sighted participants completed tasks on a system, and then rated usability on a scale.
+
+I was involved in the document review initially, but once it got going, I left it to Shari and Tiago to complete it. As established Accessibility researchers they already knew lots of the research reports in the corpus, and had a good sense of what aspects could be coded. Plus, they could do it from their desks. I focused on the experiment, taking advantage of having more unassigned time, and expertise in experimentation and quantitative analysis. 
+
+## Method
+
+First, I built a phone information system, mimicking the information line of the American Museum of National History. Upon calling the line, people hear a welcome message, and can then navigate through a menu of options by pressing numbers. We selected a phone information system because it’s one of the rare types of widely-available technologies that is accessible to both sighted and blind audiences. I made two versions, one of which with degraded usability. The menus were deeper, the navigation more confusing, the cognitive load higher: a case study in how not to design a system. Time was tight, so I asked an [artist]( http://www.joanalinda.com) friend of mine with voice-acting experience to record all the speech, and quickly implemented the logic and a logging apparatus in good-old Java, with an [SWT](https://www.eclipse.org/swt/) experimenter UI. Participants wore headphones and used a USB numpad connected to my computer for input.
+
+I then had participants complete tasks with the different versions of the system, and asked them to rate usability with the [Single Ease Question](https://measuringu.com/seq10/). One task, for instance, was to find out if the museum was open that day. I recruited 16 visually-impaired participants from a [local vocational training center](http://www.fundacao-sain.org.pt/) I had worked with before (I had built an [Arduino digital Braille keyboard, with vibration feedback rings](https://diogomarques.netlify.com/portfolio/arduino_braille.jpg), for Braille education --- but that’s another story). To have a baseline, I also recruited 16 sighted students from my University to complete the same tasks. 
+
+## Results
+
+I analyzed the data with frequentist statistical methods: t-tests for detecting effects, Cohen’s d for effect sizes, and Person’s correlations and respective confidence intervals for variable relationships. I found that, on average, visually-impaired participants scored the easiness of use just about the same as students, despite taking more time and going through more steps to get to the information they needed. Visually-impaired participants, unlike students, were also not very sensitive to the system being degraded. Our initial hypothesis stood!
+
+The outcome of this collaboration is documented in a [research paper](https://diogomarques.netlify.com/paper-scales.pdf), presented at ASSETS 2015 (ASSETS, or the International ACM SIGACCESS Conference on Computers & Accessibility, is the leading scientific conference on Accessibility).  
+
+Reflecting on this project, it would have been interesting to explore what could explain this effect to begin with. We offered some possible explanations, but our research design was not suited to explore the “why”. Today, I would have at least asked participants to explain their rating to the Single Ease Question. 
+
+# Quantifying smartphone snoopers
+|Estimated reading time |  5:00  |
+|--       | --|
+|Methods	| Surveys, survey experiments |
+|Deliverables	| Research paper and presentation
+
+## Context
+When I started my PhD, in 2014, I wanted to look deeper at one specific behavior: people accessing each other’s smartphones without permission. It took me the best part of two years to finally be able to quantify this kind of behavior. In the end, we found that the behavior is much more common than previously thought, and even prevalent among younger people.
+
+In the years before, during my master’s, I had developed an [unlock authentication method for smartphones, in which people could log in by tapping a sequence (a *tap phrase*) on the home screen]( https://dl.acm.org/citation.cfm?id=2578090). As a Software Engineering student, my focus was on creating an algorithm that could [match sequences of taps](https://diogomarques.netlify.com/portfolio/portfolio_taps.png). My thesis advisor, however, was an HCI researcher, and mobile authentication was a hot topic in HCI. That’s how I was nudged to start doing serious user research. 
+
+Once I started engaging with users about my designs for authentication methods, something became very clear: participants thought of authentication locks as protection against strangers, in case, for instance, they lost their phones. What about people they knew? Was unauthorized access by known people being overlooked? And how could we go about in building an understanding of this type of unauthorized access, so that eventually we could design for it? I started to explore the topic, but the user research methods I knew about were problematic. It was difficult to get people to speak freely about these types of incidents. Thus, even the basic task of quantifying the prevalence of this type of unauthorized access seemed impossible.
+
+## Method
+
+As luck would have it, I learned about a way to measure sensitive behaviors one morning, on the way to work. I was listening to an economics podcast. The topic of discussion was an aid program in which villagers were simply given a lump sum of money. One concern was that some villagers would spend the money unwisely, for instance buying alcoholic beverages instead of food. But the people running the program prepared for that, and would from time to time measure those kinds of behaviors. It appeared that villagers were not getting drunk on aid money. But how could researchers ask villagers about such a sensitive behavior and expect truthful responses? They briefly mentioned not asking villagers directly, but instead using some sort of statistical truth serum. I needed to know more! 
+
+When I got to the office, I dug deeper. It turned out they used a sneaky survey technique, called the *list experiment*. List experiments are a mix between a survey and an experiment. Participants are split into a control and a treatment group. Participants in the control group are presented with a list of behaviors, and asked to say in how many they have engaged. Importantly, they only have to say a number of behaviors, not which ones. Participants in the treatment group get a modified list of behaviors, with an added item, which is the sensitive behavior researchers are trying to measure. By comparing the average responses between the two groups, researchers can estimate how many, overall, engaged in the sensitive behavior, without knowing which individual participants did it.
+
+## Results
+
+Once I heard about this technique, I very quickly tried it. In my first list experiment study, I had 60 students respond to a list experiment survey, and 30 students respond to a direct question. The difference was stark. Only 10% of participants that responded to the direct question self-identified with having engaged in unauthorized access to a smartphone. The list experiment estimate was, however, that 60% had done it. This initial exploration was reported in [an extended abstract and poster presented at the 2014 CHI Conference on Human Factors in Computing Systems]( https://diogomarques.netlify.com/chi-wip-snooping-cr.pdf), the leading HCI conference.
+
+It was a nice proof of concept, but to convince others that intrusions to personal devices were an issue deserving of attention, I needed to scale-up my sample. I cold-emailed Ildar Muslukhov, a graduate student at the University of British Columbia, and his advisor, Kosta Beznosov, a leading Usable Security researcher. They had worked on the same topic, and stumbled on the same problem of measuring sensitive behaviors. They agreed to collaborate. (Kosta has since become a mentor to me.)
+
+We ran a series of large-scale direct question surveys in Google Consumer Surveys, and list experiments on Amazon Mechanical Turk. We found that an estimated 31% of participants in a list experiment with 1,381 participants had “looked through someone else’s phone without permission,” in the 1-year period before the survey was conducted. Using recently-developed regression modelling techniques for list experiments, and [their implementation in R](https://cran.r-project.org/web/packages/list/index.html), we found that being young an owning a smartphone predicted higher likelihood of having engaged in intrusions. Engaging in intrusions was also more common among people who themselves used smartphones for privacy-sensitive activities.
+
+I presented our [paper reporting these findings at SOUPS 2016](https://diogomarques.netlify.com/paper-soups2016.pdf), the specialized conference on Usable Security and Privacy (there’s very [cringy audio]( https://www.usenix.org/conference/soups2016/technical-sessions/presentation/marques) of my presentation at the conference website, and a slide deck from when I presented this project in a seminar for Data Science master's students on my [website](https://diogomarques.netlify.com/slides-ds_seminar.pdf)). We were fortunate to be awarded that year’s Distinguished Paper Award by the program committee. 
+
+Early the following year, we got the news that the paper had been included in ACM’s Best of Computing list. It feels stupid to care about awards, but for years I’d seen a decaying “Best of Computing” sticker in one of my favorite Professor’s office door. Getting this research completed had taken so much: lacking Usable Security researchers in my department (indeed, in my country!), I had to build my own colab network; lacking funding, I had to pay participants myself; I had to push my writing to a whole new level, in a language that isn’t my own; and I had to learn statistical concepts and tools like R from scratch. It feels stupid to care about an award, but I do care -- even if ACM doesn’t mail out stickers anymore.
+
+<!--- add media coverage -->
+
+
+# A qualitative lens on intrusions
+
+|Estimated reading time |  3:45  |
+|--                     |     --|
+|Methods	  | Qualitative survey |
+|Deliverables	| Research paper and presentation
+
+## Context
+
+Having had found that intrusions to personal devices were much more common than previously thought, the next step was to understand these incidents in more detail. The issue called for qualitative research.
+
+## Method
+
+To gather qualitative data, we opted to run a qualitative survey online, in which participants would write accounts of past situations in which either they accessed the smartphone of someone they knew, or someone they knew accessed theirs. This was again a potentially sensitive topic, so we opted for online administration of the survey. Remote participants are known to have a greater sense of anonymity. Our prompt to participants was carefully crafted: we avoided loaded words, asked them to use fictional names we provided, asked them to use gender-neutral language, and to write about their experiences as if they were an external narrator. We collected about 100 accounts of unauthorized access from online participants using [Prolific](https://prolific.ac/), a panel service.
+
+## Analysis
+
+Our first analysis was typical of mixed-methods user research. We iteratively developed a codebook, coded the text data manually, and validated whether two members of the research team independently reached the same coding decisions. From the process, we gained insight into several aspects of incidents of unauthorized access. For instance, we found that, in the accounts we collected, those who accessed devices were most commonly part of an *inner circle* of people close to the device owner; we found that there was an array of motivations for unauthorized access, ranging from benign to malicious, but most commonly unauthorized access was motivated by a desire to learn about relationships of the device owner with third parties; we found that incidents often occurred when devices were just briefly unattended; or that, overwhelmingly, the most accessed data were records of in-text conversations, such as instant messages or email. To make these insights easier to grasp, we produced visualizations for each of our code categories, such as this one:
+
+
+
+<center>
+![](qual_1.png){ width=75% } 
+</center>
+
+
+
+Or, for two-level code categories, this one:
+
+
+
+<center>
+![](qual_2.png){ width=75% }  
+</center>
+
+Having completed this process, I was not satisfied that our analysis was properly giving voice to participants. To make participants justice, I spent a lot of time exploring and experimenting with visualization and clustering techniques that could tell a richer story of participant’s experiences. I was hoping to find a few *types* of incidents, much in the way as personas are supposed to represent *types* of users. I did find many ways to group incidents (through hierarchical clustering, k-modes, community algorithms, multiple correspondence analysis, and the list goes on). But, the problem remained: no matter how sophisticated the quantitative analysis of the codes was, it lacked the richness I could read in participant accounts. It was time to go back to the data.
+
+Immersing myself in what participants had written, I eventually found the reason why I had the sense that their voice didn’t come through in the earlier analysis. The richness of the data they had provided was often not on the facts they relayed --- who did what how when why?. It was in **how** they represented those facts. I turned to thematic analysis, and set up a process by which I would re-examine the data in multiple rounds of close reading, paying attention to how participants wrote. Gradually, I developed two overarching themes to participant’s accounts of incidents. First, participants understood trust as performative vulnerability: interpersonal trust was necessary to sustain relationships, but building trust required displaying vulnerability to those closest to them. Second, participants were self-serving in their sensemaking: they blamed incidents of unauthorized access on a set of circumstances, or the other person’s shortcomings, but rarely themselves.
+
+I presented our [paper reporting these findings at the 2019 CHI Conference on Human Factors in Computing Systems](https://diogomarques.netlify.com/paper-chi19.pdf) (slides [here]( https://diogomarques.netlify.com/slides-chi19.pdf)), the leading HCI conference. I now had characterized unauthorized access to personal devices both quantitatively, and qualitatively, and could finish my PhD!

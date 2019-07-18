@@ -20,7 +20,7 @@ ga('send', 'pageview');
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-This blog showcases some of the projects I’ve worked on. For more detail, please refer to linked research reports, or ask me!
+This blog showcases some of the projects I’ve worked on. For more detail, please refer to linked research reports, or ask [me](http://diogomarques.net)!
 
 # How blind users respond to rating scales
 
@@ -28,7 +28,7 @@ This blog showcases some of the projects I’ve worked on. For more detail, plea
 |--                     |     --|
 |Methods	  | Controlled experiments, document review |
 |Participants | in-person, 16 sighted, 16 blind/partially sighted |
-|Tools | R, Java/SWT |
+|Tools | SPSS, Java/SWT |
 |Deliverables	| Research paper and presentation |
 
 ## Context
@@ -101,7 +101,7 @@ Early the following year, we got the news that the paper had been included in AC
 |--                     |     --|
 |Methods	  | Qualitative survey |
 |Participants | 102
-|Tools | R |
+|Tools | R, Limesurvey |
 |Deliverables	| Research paper and presentation
 
 ## Context
